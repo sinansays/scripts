@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Reading Mode Print to PDF",
+  "version": "1.0.0",
+  "description": "Print only Chrome Reading Mode content to a PDF-friendly print dialog.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content_script.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "host_permissions": ["<all_urls>"],
+  "permissions": []
+}
